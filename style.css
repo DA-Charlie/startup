@@ -1,0 +1,206 @@
+/* Reset some default browser styles */
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+/* Global styles */
+body {
+	font-family: "Arial", sans-serif;
+	background-color: #f9f9f9;
+}
+
+section {
+	margin: 40px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
+/* Container */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* Cards */
+/* Update the CSS for the Card Section */
+
+/* .services {
+	background-color: #f9f9f9;
+	padding: 40px 0;
+} */
+
+.d-flex{
+	display: flex;
+}
+.flex-row{
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.card {
+	display: flex;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	overflow: hidden;
+	height: 200px;
+	max-width: 700px;
+}
+
+.card img {
+	width: 50%;
+	/* Adjust the width of the image */
+	height: 100%;
+	/* Take full height of the card */
+	object-fit: cover;
+}
+
+.card-content {
+	flex: 1;
+	padding: 20px;
+}
+
+.card-content h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.card-content p {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+	.card {
+		flex-direction: column;
+		/* Stack image on top of text for smaller screens */
+	}
+
+	.card img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+/* Forms */
+.form-group {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+/* Hero Section */
+/* Update the CSS for the Hero Section */
+
+.hero {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	margin: 0;
+	box-shadow: none;
+	border-radius: 0;
+}
+
+.hero img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.hero-content {
+	position: relative;
+	z-index: 1;
+	padding: 180px 20px;
+	/* Adjust padding as needed */
+	color: #fff;
+}
+
+.hero-content h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+.hero-content p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 40px;
+}
+
+/* Add shadow to the text for better readability */
+.hero-content h1,
+.hero-content p {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Buttons */
+.button {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: background-color 0.3s;
+}
+
+.button-primary {
+	background-color: #3498db;
+	color: #fff;
+}
+
+.button-secondary {
+	background-color: #2ecc71;
+	color: #fff;
+}
+
+/* Avatar */
+.avatar {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+/* Texts */
+.heading {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.subheading {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.paragraph {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
